@@ -3,6 +3,7 @@ body {
 }
 h1 {
   text-align: center;
+  color: rgba(17, 75, 17, 0.8);
 }
 footer {
   text-align: center;
@@ -30,6 +31,7 @@ button {
   justify-content: space-between;
   margin: 0 auto;
   max-width: 95%;
+  padding-bottom: 30px;
 }
 .playerInfo {
   margin: 0px 15px;
@@ -43,6 +45,7 @@ button {
   grid-column-gap: 1px;
   grid-row-gap: 1px;
   border: 1px solid rgba(32, 110, 32, 0.7);
+  border-radius: 5px;
   width: 500px;
   height: 500px;
 }
