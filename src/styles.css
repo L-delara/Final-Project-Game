@@ -1,9 +1,18 @@
 body {
-  background-color: #468a5ac2;
+  background: linear-gradient(
+    180deg,
+    rgba(30, 94, 45, 0.9640231092436975) 14%,
+    rgba(163, 113, 40, 1) 85%
+  );
+  font-family: "Comfortaa", cursive;
 }
 h1 {
   text-align: center;
   color: rgba(17, 75, 17, 0.8);
+}
+h2 {
+  font-size: 14px;
+  font-weight: bold;
 }
 footer {
   text-align: center;
@@ -26,21 +35,24 @@ button {
   display: block;
   margin: 0 auto;
 }
-#ladder1 {
-  height: 125px;
-  width: 65px;
+#ladder1,
+#ladder2,
+#ladder3 {
+  max-width: 50px;
+  min-height: 50px;
   display: block;
-  margin: 0 auto;
-  position: absolute;
-  top: 240px;
-  left: 500px;
-  z-index: 1;
+  position: relative;
+  top: 28px;
+}
+#player-avatar {
+  max-width: 50px;
+  min-height: 50px;
 }
 .container {
   display: block;
   margin: 0 auto;
   width: 800px;
-  background-color: #8ef0ab83;
+  background-color: #aed4ba9a;
   border: 1px solid rgba(32, 110, 32, 0.7);
   border-radius: 4px;
   color: rgba(32, 110, 32, 0.7);
@@ -59,7 +71,7 @@ button {
   background-color: rgba(254, 255, 250, 0.55);
   border-radius: 4px;
   box-shadow: 1px 1px 1px 1px rgba(0, 10, 5, 0.45);
-  margin: 0 0 10px 5px;
+  margin: 0 0 10px 35px;
 }
 .dice p {
   text-align: center;

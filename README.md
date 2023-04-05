@@ -8,6 +8,11 @@ Skeleton: A board (grid of 100? spaces), scoreboard(? player position determines
 
 logic:
 -- number randomizer for die rolls 1-6 (nailed it!)
+
+Next:
+
+- player selects character (user input, display on screen)
+
 -- async/await - die roll result is the next move
 -- climb/jump ahead spaces, fall back spaces ()
 
@@ -22,4 +27,6 @@ baby snake:<a href="https://www.flaticon.com/free-icons/snake" title="snake icon
 banded snake:
 <a href="https://www.flaticon.com/free-icons/fauna" title="fauna icons">Fauna icons created by Freepik - Flaticon</a>
 -- Ladders
-<a href="https://www.flaticon.com/free-icons/ladder" title="ladder icons">Ladder icons created by Freepik - Flaticon</a>
+brown: <a href="https://www.flaticon.com/free-icons/ladder" title="ladder icons">Ladder icons created by Freepik - Flaticon</a>
+red:<a href="https://www.flaticon.com/free-icons/ladder" title="ladder icons">Ladder icons created by bukeicon - Flaticon</a>
+green: <a href="https://www.flaticon.com/free-icons/ladder" title="ladder icons">Ladder icons created by Freepik - Flaticon</a>
