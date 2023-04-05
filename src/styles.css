@@ -18,6 +18,24 @@ button {
   font-size: 20px;
   cursor: pointer;
 }
+#snake1,
+#snake2,
+#snake3 {
+  max-width: 65px;
+  min-height: 65px;
+  display: block;
+  margin: 0 auto;
+}
+#ladder1 {
+  height: 125px;
+  width: 65px;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 240px;
+  left: 500px;
+  z-index: 1;
+}
 .container {
   display: block;
   margin: 0 auto;
@@ -65,6 +83,7 @@ button {
   border-radius: 5px;
   width: 500px;
   height: 500px;
+  background-color: #e2ffeb96;
 }
 .div1 {
   grid-area: 5 / 1 / 6 / 2;

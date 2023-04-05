@@ -11,3 +11,5 @@ function showRoll(number) {
 document.getElementById("roll").onclick = function () {
   showRoll(rollDice());
 };
+
+//add snakes and character avatars
