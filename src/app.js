@@ -11,7 +11,7 @@ function showRoll(number) {
 document.getElementById("roll").onclick = function () {
   showRoll(rollDice());
 };
-
+//-----------------------------
 // have players choose an avatar (wizard, cat, archer) and display next to player and bottom at start line
 function selectPlayer(choice) {
   if (pickedAvatar >= 2) {
@@ -48,3 +48,7 @@ function selectPlayer(choice) {
 
   document.getElementById(avatarId).innerHTML = avatarName;
 }
+//-------------------------------
+//have picked avatar move divs based on number of rolls from rollDice() result
+
+//need while/async/await for turn-based player moves. One must run before the other.
