@@ -15,8 +15,12 @@ h2 {
   font-size: 14px;
   font-weight: bold;
 }
+h4 {
+  color: rgba(11, 43, 11, 0.9);
+  margin: 5px 0 5px 0;
+}
 #player1,
-#player2 p {
+#player2 {
   font-weight: 900;
   color: rgba(11, 43, 11, 0.9);
   font-size: 14px;
@@ -80,7 +84,7 @@ button {
   background-color: rgba(254, 255, 250, 0.55);
   border-radius: 4px;
   box-shadow: 1px 1px 1px 1px rgba(0, 10, 5, 0.45);
-  margin: 0 0 10px 35px;
+  margin: 10px 0 10px 35px;
 }
 .dice p {
   text-align: center;
@@ -106,13 +110,15 @@ button {
   height: 500px;
   background-color: #e2ffeb96;
 }
+
 .startLine {
   /*don't need border eventually? just need to check avatar moves */
   border: 1px solid rgba(32, 110, 32, 0.7);
   border-radius: 5px;
-  height: 75px;
+  height: 50px;
   width: 150px;
-  margin-top: 65px;
+  position: relative;
+  top: 20px;
 }
 .div1 {
   grid-area: 5 / 1 / 6 / 2;

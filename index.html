@@ -14,6 +14,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./src/styles.css" />
+    <script>
+      let pickedAvatar = 0;
+      let player1Avatar = "";
+      let player2Avatar = "";
+    </script>
     <title>Nope Rope Game🐍🐍🐍</title>
   </head>
   <body>
@@ -24,29 +29,33 @@
           <!-- player info - 1&2, dice roller -->
 
           <h4>Pick Your Player:</h4>
-          <img
-            src="./src/images/magician.png"
-            alt="wizard"
-            id="wizard-avatar"
-            onclick="selectPlayer('wizard-avatar')"
-          />
-          <img
-            src="./src/images/black-cat.png"
-            alt="black cat"
-            id="cat-avatar"
-            onclick="selectPlayer('cat-avatar')"
-          />
-          <img
-            src="./src/images/bow.png"
-            alt="archer"
-            id="archer-avatar"
-            onclick="selectPlayer('archer-avatar')"
-          />
+          <div class="newGame">
+            <img
+              src="./src/images/magician.png"
+              alt="wizard"
+              id="wizard-avatar"
+              onclick="selectPlayer('wizard-avatar')"
+            />
+            <img
+              src="./src/images/black-cat.png"
+              alt="black cat"
+              id="cat-avatar"
+              onclick="selectPlayer('cat-avatar')"
+            />
+            <img
+              src="./src/images/bow.png"
+              alt="archer"
+              id="archer-avatar"
+              onclick="selectPlayer('archer-avatar')"
+            />
+          </div>
 
-          <p id="player1">Player 1:</p>
-          <span id="avatar1"></span>
-          <p id="player2">Player 2:</p>
-          <span id="avatar1"></span>
+          <div>
+            <span id="player1">Player 1: </span><span id="avatar1"></span>
+          </div>
+          <div>
+            <span id="player2">Player 2: </span><span id="avatar2"></span>
+          </div>
 
           <div class="startPlay">
             <div class="dice"><p id="dice-face">⚫</p></div>
