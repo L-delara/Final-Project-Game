@@ -4,6 +4,7 @@ body {
     rgba(30, 94, 45, 0.9640231092436975) 14%,
     rgba(163, 113, 40, 1) 85%
   );
+  background-image: fixed;
   font-family: "Comfortaa", cursive;
 }
 h1 {
@@ -13,6 +14,12 @@ h1 {
 h2 {
   font-size: 14px;
   font-weight: bold;
+}
+#player1,
+#player2 p {
+  font-weight: 900;
+  color: rgba(11, 43, 11, 0.9);
+  font-size: 14px;
 }
 footer {
   text-align: center;
@@ -44,7 +51,9 @@ button {
   position: relative;
   top: 28px;
 }
-#player-avatar {
+#wizard-avatar,
+#cat-avatar,
+#archer-avatar {
   max-width: 50px;
   min-height: 50px;
 }
@@ -96,6 +105,14 @@ button {
   width: 500px;
   height: 500px;
   background-color: #e2ffeb96;
+}
+.startLine {
+  /*don't need border eventually? just need to check avatar moves */
+  border: 1px solid rgba(32, 110, 32, 0.7);
+  border-radius: 5px;
+  height: 75px;
+  width: 150px;
+  margin-top: 65px;
 }
 .div1 {
   grid-area: 5 / 1 / 6 / 2;

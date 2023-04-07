@@ -22,22 +22,38 @@
       <div class="playArea">
         <div class="playerInfo">
           <!-- player info - 1&2, dice roller -->
+
           <h4>Pick Your Player:</h4>
-          <img src="./src/images/magician.png" alt="" id="player-avatar" />
+          <img
+            src="./src/images/magician.png"
+            alt="wizard"
+            id="wizard-avatar"
+            onclick="selectPlayer('wizard-avatar')"
+          />
           <img
             src="./src/images/black-cat.png"
-            alt=""
-            id="player-avatar"
+            alt="black cat"
+            id="cat-avatar"
+            onclick="selectPlayer('cat-avatar')"
           />
-          <img src="./src/images/bow.png" alt="" id="player-avatar" />
+          <img
+            src="./src/images/bow.png"
+            alt="archer"
+            id="archer-avatar"
+            onclick="selectPlayer('archer-avatar')"
+          />
 
-          <h3>Player 1:</h3>
-          <h3>Player 2:</h3>
+          <p id="player1">Player 1:</p>
+          <span id="avatar1"></span>
+          <p id="player2">Player 2:</p>
+          <span id="avatar1"></span>
 
           <div class="startPlay">
             <div class="dice"><p id="dice-face">⚫</p></div>
             <button id="roll">Roll</button>
           </div>
+
+          <div class="startLine"></div>
         </div>
 
         <div class="gameBoard">
