@@ -38,23 +38,7 @@ button {
   font-size: 20px;
   cursor: pointer;
 }
-#snake1,
-#snake2,
-#snake3 {
-  max-width: 65px;
-  min-height: 65px;
-  display: block;
-  margin: 0 auto;
-}
-#ladder1,
-#ladder2,
-#ladder3 {
-  max-width: 50px;
-  min-height: 50px;
-  display: block;
-  position: relative;
-  top: 28px;
-}
+
 #wizard-avatar,
 #cat-avatar,
 #archer-avatar {
@@ -98,24 +82,6 @@ button {
   vertical-align: middle;
 }
 
-/* grid-style gameboard
-#snake1,
-#snake2,
-#snake3 {
-  max-width: 65px;
-  min-height: 65px;
-  display: block;
-  margin: 0 auto;
-}
-#ladder1,
-#ladder2,
-#ladder3 {
-  max-width: 50px;
-  min-height: 50px;
-  display: block;
-  position: relative;
-  top: 28px;
-} */
 .gameBoard {
   display: grid;
   margin: 0 auto;
