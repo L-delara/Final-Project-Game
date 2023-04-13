@@ -51,4 +51,36 @@ function selectPlayer(choice) {
 //-------------------------------
 //have picked avatar move divs based on number of rolls from rollDice() result
 
-//need while/async/await for turn-based player moves. One must run before the other.
+// have picked avatar move divs based on number of rolls from rollDice() result
+let playerPosition = 0;
+
+function movePlayer(diceResult) {
+  // if (pickedPlayer === false) return;
+
+  document
+    .querySelector(
+      ".gameBoard div.boardSpace:nth-child(${playerPosition})"
+    )
+    .classList.remove("active");
+
+  //find next position after die is cast
+  playerPosition += diceResult;
+
+  // check for ladder or snake
+
+  const square = document.querySelector(
+    ".gameBoard div.boardSpace:nth-child(${playerPosition})"
+  );
+  if (boardSpace.classList.contains("ladder")) {
+    playerPosition = parseInt(boardSpace.dataset.moveTo);
+  } else if (boardSpace.classList.contains("snake")) {
+    playerPosition = parseInt(boardSpace.dataset.moveTo);
+  }
+
+  //add active
+  document
+    .querySelector(
+      ".gameBoard div.boardSpace:nth-child(${playerPosition})"
+    )
+    .classList.add("active");
+}
