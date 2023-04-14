@@ -1,0 +1,110 @@
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(30, 94, 45, 0.9640231092436975) 14%,
+    rgba(163, 113, 40, 1) 85%
+  );
+  background-image: fixed;
+  font-family: "Comfortaa", cursive;
+}
+h1 {
+  text-align: center;
+  color: rgba(17, 75, 17, 0.8);
+}
+h3,
+h4 {
+  color: rgba(11, 43, 11, 0.9);
+  padding-top: 0px;
+  padding-right: 10px;
+  text-align: center;
+}
+#player1,
+#player2 {
+  font-weight: 900;
+  color: rgba(11, 43, 11, 0.9);
+  font-size: 14px;
+  text-align: center;
+}
+footer {
+  text-align: center;
+}
+button {
+  display: block;
+  padding: 10px 30px;
+  margin: 0 auto;
+  border-radius: 25px;
+  background-color: rgba(17, 75, 17, 0.8);
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#wizard-avatar,
+#cat-avatar,
+#archer-avatar {
+  max-width: 50px;
+  min-height: 50px;
+}
+#wizard-avatar:hover,
+#cat-avatar:hover,
+#archer-avatar:hover {
+  transform: scale(1.25);
+}
+.container {
+  display: block;
+  margin: 0 auto;
+  width: 800px;
+  background-color: #aed4ba9a;
+  border: 1px solid rgba(32, 110, 32, 0.7);
+  border-radius: 4px;
+  color: rgba(32, 110, 32, 0.7);
+}
+.playArea {
+  display: block;
+  margin: 0 auto;
+  max-width: 95%;
+  padding-bottom: 30px;
+}
+.dice {
+  width: 80px;
+  height: 80px;
+  border: 1px solid rgba(1, 3, 2, 0.75);
+  background-color: rgba(254, 255, 250, 0.55);
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 10, 5, 0.45);
+  margin: 10px 0 10px 35px;
+}
+.dice p {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgba(1, 3, 2, 0.75);
+  line-height: 0px;
+}
+.playerInfo {
+  display: flex;
+  justify-content: center;
+}
+
+#gameBoard {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 5px;
+  margin: 0 auto;
+  border: 1px solid rgba(32, 110, 32, 0.7);
+  border-radius: 5px;
+  width: 700px;
+  height: 300px;
+  background-color: #e2ffeb96;
+}
+
+.Player1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.Player2 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.startPlay {
+  grid-area: 1 / 2 / 2 / 3;
+}

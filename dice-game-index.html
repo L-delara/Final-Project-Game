@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dice-sources/dice-style.css" />
+    <script>
+      let pickedAvatar = 0;
+      let player1Avatar = "";
+      let player2Avatar = "";
+    </script>
+    <title>Rolling...</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Roll 🎲🎲🎲</h1>
+
+      <div class="playArea">
+        <div class="playerInfo">
+          <h3>Pick Your Player:</h3>
+          <div id="avatar-choices">
+            <img
+              src="./src/images/magician.png"
+              alt="wizard"
+              id="wizard-avatar"
+              onclick="selectPlayer('wizard-avatar')"
+            />
+            <img
+              src="./src/images/black-cat.png"
+              alt="black cat"
+              id="cat-avatar"
+              onclick="selectPlayer('cat-avatar')"
+            />
+            <img
+              src="./src/images/bow.png"
+              alt="archer"
+              id="archer-avatar"
+              onclick="selectPlayer('archer-avatar')"
+            />
+          </div>
+        </div>
+
+        <div id="gameBoard">
+          <div class="Player1">
+            <h4>Player 1:</h4>
+            <span id="name1"></span>
+            <div id="avatar1"></div>
+          </div>
+          <div class="startPlay">
+            <div class="dice"><p id="dice1">⚫</p></div>
+            <div class="dice"><p id="dice2">⚫</p></div>
+
+            <button id="roll1">Roll</button>
+            <button id="roll2">Roll</button>
+          </div>
+
+          <div class="Player2">
+            <h4>Player 2:</h4>
+            <span id="name2"></span>
+            <div id="avatar2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      Coded by <a href="https://github.com/L-delara">Ligia</a>. <br />
+      May the odds be ever in your favor. 🎲🎲
+    </footer>
+    <script src="./dice-sources/dice.js"></script>
+  </body>
+</html>
