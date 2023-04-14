@@ -95,6 +95,14 @@ button {
   display: flex;
   justify-content: center;
 }
+.scoreboard {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid rgba(32, 110, 32, 0.7);
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+}
 
 #gameBoard {
   display: grid;

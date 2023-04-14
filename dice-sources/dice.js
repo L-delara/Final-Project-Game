@@ -28,6 +28,7 @@ function selectPlayer(choice) {
   let cat = document.getElementById("cat-avatar");
   let archer = document.getElementById("archer-avatar");
 
+  let nameId = "name1";
   let avatarName = "Wizard!";
   //copy image
   let avatarPick = wizard;
@@ -43,16 +44,18 @@ function selectPlayer(choice) {
 
   let avatarId = "";
   if (pickedAvatar === 1) {
-    avatarId = "avatar1";
+    avatarId = "#avatar1";
+    nameId = "name1";
   }
   if (pickedAvatar === 2) {
-    avatarId = "avatar2";
+    avatarId = "#avatar2";
+    nameId = "name2";
   }
   //move to starting line
-  let chosen1 = document.querySelector("#avatar1");
+  let chosen1 = document.querySelector(avatarId);
   chosen1.appendChild(avatarPick);
-  let chosen2 = document.querySelector("#avatar2");
-  chosen2.appendChild(avatarPick);
+  // let chosen2 = document.querySelector("avatar2");
+  // chosen2.appendChild(avatarPick);
 
-  document.getElementById(avatarId).innerHTML = avatarName;
+  document.getElementById(nameId).innerHTML = avatarName;
 }
