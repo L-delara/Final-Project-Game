@@ -1,23 +1,3 @@
-// create a dice roller - 6 sides, random number
-const rollDice = () => 1 + Math.floor(Math.random() * 6);
-
-//show your roll
-function showRoll1(number) {
-  let rolledNumber1 = document.getElementById("dice1");
-  rolledNumber1.innerHTML = number;
-}
-function showRoll2(number) {
-  let rolledNumber2 = document.getElementById("dice2");
-  rolledNumber2.innerHTML = number;
-}
-// let rollMe =
-document.getElementById("roll1").onclick = function () {
-  showRoll1(rollDice());
-};
-document.getElementById("roll2").onclick = function () {
-  showRoll2(rollDice());
-};
-//-----------------------------
 // have players choose an avatar (wizard, cat, archer) and display next to player and bottom at start line
 function selectPlayer(choice) {
   if (pickedAvatar >= 2) {
@@ -52,10 +32,51 @@ function selectPlayer(choice) {
     nameId = "name2";
   }
   //move to starting line
-  let chosen1 = document.querySelector(avatarId);
-  chosen1.appendChild(avatarPick);
-  // let chosen2 = document.querySelector("avatar2");
-  // chosen2.appendChild(avatarPick);
+  let chosen = document.querySelector(avatarId);
+  chosen.appendChild(avatarPick);
 
   document.getElementById(nameId).innerHTML = avatarName;
+}
+//------------------------------
+// create a dice roller - 6 sides, random number
+const rollDice = () => 1 + Math.floor(Math.random() * 6);
+
+let roll1HasHappened = false;
+let roll2HasHappened = false;
+
+//show your roll
+function showRoll1(number) {
+  let rolledNumber1 = document.getElementById("dice1");
+  rolledNumber1.innerHTML = number;
+  roll1HasHappened = true;
+}
+function showRoll2(number) {
+  let rolledNumber2 = document.getElementById("dice2");
+  rolledNumber2.innerHTML = number;
+  roll2HasHappened = true;
+}
+// let rollMe =
+document.getElementById("roll1").onclick = function () {
+  showRoll1(rollDice());
+};
+document.getElementById("roll2").onclick = function () {
+  showRoll2(rollDice());
+};
+
+while (true) {
+  if (roll1HasHappened && roll2HasHappened) {
+    //find the winner-------
+    if (showRoll1 > showRoll2) {
+      console.log("player 1 wins");
+    } else if (showRoll1 < showRoll2) {
+      console.log("player 2 wins");
+    } else {
+      console.log("draw!");
+    }
+
+    // restart the variables
+    roll1HasHappened = false;
+    roll2HasHappened = false;
+  }
+  // go back wait for both rolls
 }
