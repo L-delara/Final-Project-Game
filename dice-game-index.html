@@ -30,19 +30,19 @@
           <h3>Pick Your Player:</h3>
           <div id="avatar-choices">
             <img
-              src="./src/images/magician.png"
+              src="./dice-sources/magician.png"
               alt="wizard"
               id="wizard-avatar"
               onclick="selectPlayer('wizard-avatar')"
             />
             <img
-              src="./src/images/black-cat.png"
+              src="./dice-sources/black-cat.png"
               alt="black cat"
               id="cat-avatar"
               onclick="selectPlayer('cat-avatar')"
             />
             <img
-              src="./src/images/bow.png"
+              src="./dice-sources/bow.png"
               alt="archer"
               id="archer-avatar"
               onclick="selectPlayer('archer-avatar')"
@@ -56,12 +56,16 @@
             <span id="name1"></span>
             <div id="avatar1"></div>
           </div>
-          <div class="startPlay">
-            <div class="dice"><p id="dice1">⚫</p></div>
-            <div class="dice"><p id="dice2">⚫</p></div>
 
-            <button id="roll1">Roll</button>
-            <button id="roll2">Roll</button>
+          <div class="startPlay">
+            <div class="faces">
+              <div class="dice"><p id="dice1">⚫</p></div>
+              <div class="dice"><p id="dice2">⚫</p></div>
+            </div>
+            <div class="buttons">
+              <button id="roll1">Roll</button>
+              <button id="roll2">Roll</button>
+            </div>
           </div>
 
           <div class="Player2">

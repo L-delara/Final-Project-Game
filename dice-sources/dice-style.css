@@ -4,7 +4,7 @@ body {
     rgba(30, 94, 45, 0.9640231092436975) 14%,
     rgba(163, 113, 40, 1) 85%
   );
-  background-image: fixed;
+  background-attachment: fixed;
   font-family: "Comfortaa", cursive;
 }
 h1 {
@@ -29,7 +29,7 @@ footer {
   text-align: center;
 }
 button {
-  display: block;
+  display: inline-block;
   padding: 10px 30px;
   margin: 0 auto;
   border-radius: 25px;
@@ -38,7 +38,17 @@ button {
   font-size: 20px;
   cursor: pointer;
 }
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
 
+.faces {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 45px;
+  padding-bottom: 10px;
+}
 #wizard-avatar,
 #cat-avatar,
 #archer-avatar {
@@ -66,13 +76,13 @@ button {
   padding-bottom: 30px;
 }
 .dice {
+  display: inline-block;
   width: 80px;
   height: 80px;
   border: 1px solid rgba(1, 3, 2, 0.75);
   background-color: rgba(254, 255, 250, 0.55);
   border-radius: 4px;
   box-shadow: 2px 2px 2px 2px rgba(0, 10, 5, 0.45);
-  margin: 10px 0 10px 35px;
 }
 .dice p {
   text-align: center;

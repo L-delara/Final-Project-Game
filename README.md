@@ -2,10 +2,6 @@ Final-Project-Game
 
 Browser game combining HTML/CSS/JS
 
-Bringing back the classic chutes and ladders:
-
-Skeleton: A board (grid of 100? spaces), scoreboard(? player position determines winner)
-
 logic:
 -- number randomizer for die rolls 1-6 (nailed it!)
 
