@@ -19,11 +19,11 @@
       let player1Avatar = "";
       let player2Avatar = "";
     </script>
-    <title>Rolling...</title>
+    <title>Dice Rolling Game</title>
   </head>
   <body>
     <div class="container">
-      <h1>Roll 🎲🎲🎲</h1>
+      <h1>🎲 Roll 🎲</h1>
 
       <div class="playArea">
         <div class="playerInfo">
@@ -53,11 +53,12 @@
         <div id="gameBoard">
           <div class="Player1">
             <h4>Player 1:</h4>
-            <div id="name1"></div>
-            <div id="avatar1"></div>
+            <div id="name1"><!--insert avatar name--></div>
+            <div id="avatar1"><!--insert avatar icon--></div>
             <div class="scoreboard">
               <span id="win">Wins:</span><span id="win1res"></span><br />
-              <span id="lose">Lose:</span><span id="lose1res"></span><br />
+              <span id="lose">Losses:</span><span id="lose1res"></span
+              ><br />
               <span id="tie">Ties:</span><span id="tie1res"></span><br />
             </div>
           </div>
@@ -67,19 +68,30 @@
               <div class="dice"><p id="dice1">⚫</p></div>
               <div class="dice"><p id="dice2">⚫</p></div>
             </div>
-            <div class="buttons">
+            <div class="rollingButtons">
               <button id="roll1">Roll</button>
               <button id="roll2">Roll</button>
             </div>
-          </div>
 
+            <div id="newGame" class="newGamePopup">
+              <div id="finalScoring" class="finalScore">
+                <!-- Box for final score-->
+              </div>
+              <b>Rematch?</b>
+              <div class="yesNoButton">
+                <button id="yesButton">Yes</button>
+                <button id="noButton">No</button>
+              </div>
+            </div>
+          </div>
           <div class="Player2">
             <h4>Player 2:</h4>
-            <div id="name2"></div>
-            <div id="avatar2"></div>
+            <div id="name2"><!--insert avatar name--></div>
+            <div id="avatar2"><!--insert avatar icon--></div>
             <div class="scoreboard">
               <span id="win">Wins:</span><span id="win2res"></span><br />
-              <span id="lose">Lose:</span><span id="lose2res"></span><br />
+              <span id="lose">Losses:</span><span id="lose2res"></span
+              ><br />
               <span id="tie">Ties:</span><span id="tie2res"></span><br />
             </div>
           </div>
