@@ -7,10 +7,10 @@ This game is great for passing time without much stress or thought. This applica
 simple turn-based role-playing games.
 
 Javascript logic needed:
--- number randomizer for die rolls 1-6
--- after each die is rolled, display shows who won, lost, or tied
--- terminates game and round based on conditions met
-   -- first player to 3 wins wins the round, game asks for a rematch.
+- number randomizer for die rolls 1-6
+- after each die is rolled, display shows who won, lost, or tied
+- terminates game and round based on conditions met
+  - first player to 3 wins wins the round, game asks for a rematch.
 
 This is a simple project with no back-end or full stack. It is presently hosted on Netlify (last checked 9/10):
 https://subtle-crumble-42c698.netlify.app/
